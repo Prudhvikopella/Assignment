@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_extrathingslayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#0e1319"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/icon_round_background"
+            android:padding="8dp"
+            android:src="@drawable/untitled_design_perfect_colour_removebg_preview" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/icon_round_background"
+            android:padding="8dp"
+            android:src="@drawable/ic_baseline_question_mark_24" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_loanlayout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl_extrathingslayout"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/top_round_corners"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_innerloanfirstlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="sans-serif"
+                android:letterSpacing="0.05"
+                android:text="nikunj , how much do you need?"
+                android:textColor="#8e9ba6"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif"
+                android:text="move the dail and set any amount you need upto ₹"
+                android:textColor="#464e57"
+                android:textSize="11dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="sans-serif"
+                android:text="4,87,891"
+                android:textColor="#464e57"
+                android:textSize="11dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="390dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/all_round_corners_white"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatSeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:progressDrawable="@drawable/custom_seekbar"
+                    android:thumb="@drawable/thumb_design_size8"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:visibility="visible"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:letterSpacing="0.05"
+                        android:text="credit amount"
+                        android:textColor="#90918c"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="sans-serif"
+                        android:letterSpacing="0.05"
+                        android:text="₹1,50,000"
+                        android:textColor="#181713"
+                        android:textStyle="bold"
+                        android:textSize="20dp"/>
+
+
+                </LinearLayout>
+
+
+
+
+<!--                    app:="#d98766"-->
+<!--                    app:trackColor="#fee8dc"-->
+<!--                    />-->
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="390dp"
+            android:layout_below="@id/ll_innerloanfirstlayout"
+            android:src="@drawable/screenshot_2023_01_07_175239"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_innerloansecondlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:alpha="0.5"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="sans-serif"
+                android:text="credit amount"
+                android:textColor="#8e9ba6"
+                android:textStyle="bold"
+                android:letterSpacing="0.05"
+                android:textSize="10dp"/>
+
+            <TextView
+                android:id="@+id/months"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="sans-serif"
+                android:text="₹1,50,000"
+                android:textColor="#8e9ba6"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_round_keyboard_arrow_down_24"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="23dp"/>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_emilayout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl_extrathingslayout"
+        android:layout_marginTop="175dp"
+        android:background="@drawable/top_round_corners_2nd"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ll_inneremifirstlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif"
+            android:text="how do you wish to repay?"
+            android:textColor="#8e9ba6"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif"
+            android:text="choose one of our recommended plans or make your"
+            android:textColor="#464e57"
+            android:textSize="11dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="sans-serif"
+            android:text="own"
+            android:textColor="#464e57"
+            android:textSize="11dp"
+            android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/screenshot_2023_01_07_203233"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create your own plan"
+                android:background="@drawable/text_background_white"
+                android:textColor="#92a0a6"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:padding="15dp"
+                android:layout_marginLeft="25dp"
+                android:letterSpacing="0.02"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_inneremisecondlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:alpha="0.5"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ll_rlinner1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="sans-serif"
+                android:text="EMI"
+                android:textColor="#8e9ba6"
+                android:textStyle="bold"
+                android:letterSpacing="0.05"
+                android:textSize="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="sans-serif"
+                android:text="₹4,247 /mo"
+                android:textColor="#8e9ba6"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_inner2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="30dp"
+                android:visibility="visible"
+                android:layout_toRightOf="@id/ll_rlinner1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="sans-serif"
+                    android:text="duration"
+                    android:textColor="#8e9ba6"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.05"
+                    android:textSize="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="sans-serif"
+                    android:text="12 months"
+                    android:textColor="#8e9ba6"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_round_keyboard_arrow_down_24"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="23dp"/>
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_selectbankaccountlayout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl_extrathingslayout"
+        android:layout_marginTop="275dp"
+        android:background="@drawable/top_round_corners_3rd"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif"
+            android:text="where should we send the money?"
+            android:textColor="#8e9ba6"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif"
+            android:text="amount will be credited to this bank account, EMI will"
+            android:textColor="#464e57"
+            android:textSize="11dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="sans-serif"
+            android:text="also be debited from this bank account"
+            android:textColor="#464e57"
+            android:textSize="11dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/screenshot_2023_01_07_212727"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change account"
+            android:background="@drawable/text_background_white"
+            android:textColor="#92a0a6"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:padding="15dp"
+            android:layout_marginLeft="25dp"
+            android:letterSpacing="0.02"/>
+
+
+
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_commonbottombutton"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/top_round_corners_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Proceed to EMI selection"
+        android:textColor="#ab9094"
+        android:textAllCaps="false" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
